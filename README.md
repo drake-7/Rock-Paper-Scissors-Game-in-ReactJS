@@ -14,4 +14,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 4. Open http://localhost:3000 (or the address shown in your console) in your web browser to view the app.
 
 ## Video ૮⍝• ᴥ •⍝ა
-<video controls src="RPS.mp4" title="Title"></video>
+<video controls src="C:/Users/vaman/Desktop/RPS.mp4" title="Title"></video>
