@@ -1,0 +1,170 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    margin: auto;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    pointer-events: none;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+.container{
+    width: 45%;
+    min-width: 500px;
+    background-color: #f3f3f3;
+    padding: 40px 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
+    pointer-events: none;
+}
+.play-score, .comp-score{
+    text-align: right;
+    font-size: 18px;
+    margin-bottom: 5px;
+    pointer-events: none;
+
+}
+.scores{
+    margin-bottom: 50px;
+}
+
+.weapons{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.weapons button{
+    background-color: #c2a7e1;
+    color: rgba(0,0,0,0.95);
+    border: none;
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    pointer-events:all;
+}
+.details{
+    margin-top: 30px;
+    text-align: center;
+    pointer-events: none;
+}
+.scores,.details{
+    font-weight: 400;
+    font-size: 15px;
+    pointer-events: none;
+}
+
+
+.result-message{
+    width: 180px;
+    padding: 10px 0;
+    margin: 30px auto;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 15px;
+    border: 2px solid #c2a7e1; /* Border color */
+    background-color: #f3f3f3; /* Background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Box shadow */
+    text-align: center; /* Center align text */
+    cursor: default; /* Set cursor to default */
+    pointer-events: none;
+}
+
+.play-choice, .comp-choice{
+    font-weight: 400;
+    margin-bottom: 10px;
+    pointer-events: none;
+}
+span{
+    font-weight: 600;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .weapons button {
+        font-size: 25px;
+        height: 70px;
+        width: 70px;
+    }
+
+    .result-message {
+        width: 150px;
+        font-size: 14px;
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .play-score, .comp-score {
+        font-size: 16px;
+        margin-bottom: 3px;
+    }
+
+    .weapons button {
+        font-size: 20px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .result-message {
+        width: 120px;
+        font-size: 12px;
+        margin: 10px auto;
+    }
+}
