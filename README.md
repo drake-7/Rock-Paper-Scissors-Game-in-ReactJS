@@ -14,4 +14,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 4. Open http://localhost:3000 (or the address shown in your console) in your web browser to view the app.
 
 ## Video ૮⍝• ᴥ •⍝ა
-<video controls src="C:/Users/vaman/Desktop/RPS.mp4" title="Title"></video>
+https://github.com/KatarzynaWierzejska/Rock-Paper-Scissors-Game-in-ReactJS/assets/64560594/f2bc6848-8a3f-48ca-b775-c25eb9bca1bb
+
